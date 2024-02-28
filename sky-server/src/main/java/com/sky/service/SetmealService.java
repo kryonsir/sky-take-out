@@ -26,4 +26,11 @@ public interface SetmealService {
      * @param ids
      */
     void deleteBatch(List<Long> ids);
+
+    /**
+     * 套餐起售停售
+     * @param status
+     * @param id
+     */
+    void StartOrStop(Integer status, Long id);
 }

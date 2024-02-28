@@ -75,4 +75,14 @@ public class SetmealServiceImpl implements SetmealService {
             setmealDishMapper.deleteBySetmealId(id);
         }
     }
+
+    /**
+     * 套餐起售停售
+     * @param status
+     * @param id
+     */
+    public void StartOrStop(Integer status, Long id) {
+        Setmeal setmeal = Setmeal.builder().status(status).id(id).build();
+        setmealMapper.update(setmeal);
+    }
 }
