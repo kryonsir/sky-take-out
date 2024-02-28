@@ -40,4 +40,12 @@ public class SetmealController {
         PageResult page = setmealService.page(setmealPageQueryDTO);
         return Result.success(page);
     }
+
+    @DeleteMapping
+    @ApiOperation("批量删除套餐")
+    public Result delete(@RequestParam List<Long> ids) {
+        log.info("批量删除套餐:{}",ids);
+        setmealService.deleteBatch(ids);
+        return Result.success();
+    }
 }
