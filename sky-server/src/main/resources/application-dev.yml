@@ -11,3 +11,7 @@ sky:
     access-key-id: LTAI5tKf6jtNs16tV98GbcKG
     access-key-secret: nllfJgj05MqF1AbIyiZNjT1IDYOmqg
     bucket-name: sky-kryon
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
