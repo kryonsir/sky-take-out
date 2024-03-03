@@ -15,14 +15,14 @@ public interface SetmealService {
      * 新增套餐
      * @param setmealDTO
      */
-    void save(SetmealDTO setmealDTO);
+    void saveWithDish(SetmealDTO setmealDTO);
 
     /**
      * 套餐分页查询
      * @param setmealPageQueryDTO
      * @return
      */
-    PageResult page(SetmealPageQueryDTO setmealPageQueryDTO);
+    PageResult pageQuery(SetmealPageQueryDTO setmealPageQueryDTO);
 
     /**
      * 批量删除套餐
